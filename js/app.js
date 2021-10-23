@@ -1,3 +1,18 @@
+(function(){
+    "use strict"
+
+
+    window.addEventListener("scroll", function(){
+        const navbar__list =document.querySelector(".page__header");
+        navbar__list.classList.toggle("sticky",window.scrollY>0);
+      })
+
+    
+    
+   
+
+
+
 /**
  * 
  * Manipulating the DOM exercise.
@@ -60,3 +75,4 @@
 // Set sections as active
 
 
+})();
