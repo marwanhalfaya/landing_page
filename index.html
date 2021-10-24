@@ -8,7 +8,6 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
-<script src="js/app.js" defer></script>
 </head>
 <body>
   <!-- HTML Follows BEM naming conventions 
@@ -16,13 +15,7 @@
   <header class="page__header">
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
-      <a href= "#" class ="landingpage">landing page</a>
-      <ul id="navbar__list">
-        <li> <a href="#section1">Section 1</a></li>
-       <li> <a href="#section2">Section 2</a></li>
-       <li><a href="#section3">Section 3</a></li>
-        <li> <a href="#section4">Section 4</a></li>
-      </ul>
+      <ul id="navbar__list"></ul>
     </nav>
   </header>
   <main>
@@ -33,7 +26,6 @@
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-   <div class="container">
     <section id="section1" data-nav="Section 1" class="your-active-class">
       <div class="landing__container">
         <h2>Section 1</h2>
@@ -88,39 +80,40 @@
          </p>
       </div>
     </section>
-    <section id="section4" data-nav="Section 4">
-      <div class="landing__container">
-        <h2>Section 4</h2>
-        <p>and for this last section more of the song of Achelis 
-          Nothing moves in the tent; time does not seem to pass. Then Achilles
-          stands. “It is close to dawn, and I do not want you to be in danger as you
-          travel home. I will have my servants prepare your son’s body.”
-          WHEN THEY ARE GONE, he slumps next to me, his face against my belly. My
-          skin grows slippery under the steady fall of his tears.
-          The next day he carries me to the pyre. Briseis and the Myrmidons watch
-          as he places me on the wood and strikes the flint. The flames surround me,
-          and I feel myself slipping further from life, thinning to only the faintest shiver
-          in the air. I yearn for the darkness and silence of the underworld, where I can
-          rest.
-          He collects my ashes himself, though this is a woman’s duty. He puts them
-          in a golden urn, the finest in our camp, and turns to the watching Greeks.
-          “When I am dead, I charge you to mingle our ashes and bury us together.”
-        </p>
+  </section>
+  <section id="section4" data-nav="Section 4">
+    <div class="landing__container">
+      <h2>Section 4</h2>
+      <p>and for this last section more of the song of Achelis 
+        Nothing moves in the tent; time does not seem to pass. Then Achilles
+        stands. “It is close to dawn, and I do not want you to be in danger as you
+        travel home. I will have my servants prepare your son’s body.”
+        WHEN THEY ARE GONE, he slumps next to me, his face against my belly. My
+        skin grows slippery under the steady fall of his tears.
+        The next day he carries me to the pyre. Briseis and the Myrmidons watch
+        as he places me on the wood and strikes the flint. The flames surround me,
+        and I feel myself slipping further from life, thinning to only the faintest shiver
+        in the air. I yearn for the darkness and silence of the underworld, where I can
+        rest.
+        He collects my ashes himself, though this is a woman’s duty. He puts them
+        in a golden urn, the finest in our camp, and turns to the watching Greeks.
+        “When I am dead, I charge you to mingle our ashes and bury us together.”
+      </p>
 
-        <p>Achilles hears the faint hum of its passage a second before it strikes. He
-          turns his head a little, as if to watch it come. He closes his eyes and feels its
-          point push through his skin, parting thick muscle, worming its way past the
-          interlacing fingers of his ribs. There, at last, is his heart. Blood spills between
-          shoulder blades, dark and slick as oil. Achilles smiles as his face strikes the
-          earth.
-        </p>
-      </div>
-    </section>
+      <p>Achilles hears the faint hum of its passage a second before it strikes. He
+        turns his head a little, as if to watch it come. He closes his eyes and feels its
+        point push through his skin, parting thick muscle, worming its way past the
+        interlacing fingers of his ribs. There, at last, is his heart. Blood spills between
+        shoulder blades, dark and slick as oil. Achilles smiles as his face strikes the
+        earth.
+      </p>
   </div>
+  </section>
+
   </main>
   <footer class="page__footer">
     <p>&copy Udacity</p>
   </footer>
-
+<script src="js/app.js"></script>
 </body>
 </html>
